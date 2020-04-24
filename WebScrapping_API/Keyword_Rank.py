@@ -7,8 +7,8 @@ app = Flask(__name__)
 for the particular website'''
 def Find_Keywords(url):
 
-    #api = "AIzaSyDcn5WPaRmpPo7HVCN8nS9DLm-hliBNaxM"
-    api = "AIzaSyClGWdqO3wXqYK7ox1jDN9D-mwrh7Bm7jE"
+    
+    api = "YOUR API KEY"
     resource = build('customsearch', 'v1', developerKey = api).cse()
     sources = []
 
