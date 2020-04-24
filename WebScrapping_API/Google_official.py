@@ -5,7 +5,7 @@ app = Flask(__name__)
 @app.route('/<string:url>')
 def Find_Keyword(url):
 
-    api = "AIzaSyDcn5WPaRmpPo7HVCN8nS9DLm-hliBNaxM"
+    api = "Your API KEY"
     resource = build('customsearch', 'v1', developerKey = api).cse()
     sources = []
 
