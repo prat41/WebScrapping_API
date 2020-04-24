@@ -10,7 +10,7 @@ def Find_Keyword(url):
     sources = []
 
     for i in range(1,30,10):
-        result = resource.list(q = url, cx = '004124293475798993048:uu7vpk6keyt',start=i).execute()
+        result = resource.list(q = url, cx = 'GOOGLE API KEY',start=i).execute()
         sources += result['items']
     keywords = [i['title'] for i in sources]
     links = [i['link'] for i in sources]
